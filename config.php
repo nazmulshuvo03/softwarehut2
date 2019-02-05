@@ -1,8 +1,8 @@
 <?php
 
-$db_host = 'localhost';
-$db_user = 'baru6alictprojec';
-$db_password = 'Ph{E2k49jXB0';
+$db_host = 'nazmulshuvo03.github.io';
+$db_user = 'nazmulshuvo03';
+$db_password = '123abc';
 $db_name = 'softwarehut';
 //session_start();
 
