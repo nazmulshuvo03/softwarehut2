@@ -1,0 +1,243 @@
+/*------------------------- body ----------------------------------*/
+*{
+	margin: 0 auto 0 auto;
+	padding:0;
+}
+
+body {
+    font-family:"Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #BDBDBD;
+    margin: 0;
+    padding: 0;
+    overflow-y:scroll;
+}
+.container {
+    width: 100%;
+}
+
+/*------------------------- header ----------------------------------*/
+header {
+    font-family: 'Lobster', cursive;
+    background-color: #ccc;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 1% 0;
+    border: 0;
+}
+header #icon {
+    width: 70%;
+    min-height: 6em;
+    padding: 1em 1em;
+}
+header #header {
+    font-size: 70px;
+    color: #117f99;
+}
+header #title {
+    font-size:30px;
+	margin-left: 60px;
+	color: rgba(52, 152, 219, 0.7);
+}
+#login_button {
+    position: absolute;
+    align-self: center;
+    font-family: "Fira Code";
+    background-color: rgba(52, 152, 219, 0.5);
+    color: black;
+    font-size: 1.5em;
+    width: 70%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-top: 5em;
+}
+
+#login_button:hover {
+    background-color : #117f99;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 1.7em;
+}
+
+.search_area {
+    position: relative;
+    float: right;
+    width: 100%;
+    margin: .5em .5em 1.5em .5em;
+}
+.search_area #search_box {
+    float: left;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: #ccc;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    width: 30%;
+}
+#search_box:focus {
+    width: 70%;
+}
+.search_area #search_button {
+    padding: 2px;
+    margin-left: 4px;
+    background-color: #ccc;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+}
+
+/*------------------------- navigation ----------------------------------*/
+.navbar {
+    margin:0 !important;
+	padding:0;
+}
+.navbar ul {
+    list-style-type: none;
+    background-color: rgba(41, 128, 185,0.5);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar ul li {
+    width: 20%;
+    float: left;
+    border-right: .5px solid black;
+}
+.navbar ul li a {
+    display: block;
+    color: rgba(52, 73, 94,1.0);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbar ul li a:hover {
+    background-color: #117f99;
+    font-size: 1.7em;
+}
+.navbar .dropdown {
+    position: absolute;
+    display: inline-block;
+}
+.navbar .dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: rgba(41, 128, 185,0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+.navbar .dropdown-content a {
+    color: rgba(52, 73, 94,1.0);
+    border: none;
+    padding: 12px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*------------------------- we do ----------------------------------*/
+.middle_area {
+    width: 100%;
+    background-color: #9E9E9E;
+    padding: 2em;
+    z-index: 10;
+}
+#middle-img {
+    float: left;
+}
+#middle-text {
+    color: #d35400;
+    font-size: 1.5em;
+}
+
+#middle-text h3  {
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+#middle-text p  {
+    font-family: "Fira Code";
+}
+
+/*------------------------- contact form ----------------------------------*/
+.form {
+    background-color: #ccc;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    margin: 2px;
+}
+
+.form h2 {
+    text-align: center;
+    color: #2c3033;
+}
+
+.form input[type=text], .form input[type=email] {
+    width: 30%;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 1px dashed #ccc;
+}
+
+.form label {
+    font-size: 20px;
+}
+
+textarea {
+    width: 30%;
+    padding: 20px;
+    border-radius: 4px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px dashed #ccc;
+    margin-bottom: 10px;
+}
+#submit_button {
+    width: 15%;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 7px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+#submit_button:hover {
+    background-color: #9E9E9E;
+    padding: 7px;
+    font-size: 1.7em;
+}
+
+/* Footer style*/
+.footer {
+    background-color: #333331;
+    width: 100%;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    margin: 0;
+}
+#footer-left {
+    float: left;
+    text-align: left;
+    padding: 0.5em 1em;
+}
+#footer-right {
+    margin-top: 2em;
+    text-align: right;
+    float: right;
+    padding: 0.5em 1em;
+}
